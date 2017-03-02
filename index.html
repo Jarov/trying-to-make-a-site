@@ -1,71 +1,79 @@
-	<!DOCTYPE html>
-	<html lang="en">
-		<head>
-			<title>SoftUni Blog</title>
-			<link rel="stylesheet" href="styles/style.css" />
-			<script src="scripts/jquery-1.10.2.js"></script>
-			<script src="scripts/bootstrap.js"></script>
-		</head>
-		<!--the body of the html-->
-		<body>
-		<!--the header it will always stay there-->
-			<header>
-				<div class = "navbar navbar-default navbar-fixed-top text-uppercase">
-					<div class = "container">
-						<div class = "navbar-header">
-							<a href = "index.html" class = "navbar-brand">SoftUni Blog</a>
-								
-							<button type = "button" class = "navbar-toggle" data-toggle = "collapse" data-target = ".navbar-collapse">
-								<span class = "icon-bar"></span>
-								<span class = "icon-bar"></span>
-								<span class = "icon-bar"></span>
-							</button>
-						</div>
+<!DOCTYPE html>
+<html lang="en">
+	<!--This is the head. here you link things for the broser so he can know what the fuck he has to do!-->
+	<head>
+		<title>SoftUni Blog</title>
+		<link rel="stylesheet" href="styles/style.css" />
+		<script src="scripts/jquery-1.10.2.js"></script>
+		<script src="scripts/bootstrap.js"></script>
+	</head>
+	<!--This is the body of the html-->
+	<body>
+	<!--the header it will always stay there-->
+		<header>
+			<div class = "navbar navbar-default navbar-fixed-top text-uppercase">
+				<div class = "container">
+					<div class = "navbar-header">
+						<a href = "index.html" class = "navbar-brand">SoftUni Blog</a>
 							
-						<div class = "navbar-collapse collapse">
-							<ul class = "nav navbar-nav navbar-right">
-								<li><a href="#">Register</a></li>
-								<li><a href="#">Login</a></li>
-							</ul>
-						</div>
+						<button type = "button" class = "navbar-toggle" data-toggle = "collapse" data-target = ".navbar-collapse">
+							<span class = "icon-bar"></span>
+							<span class = "icon-bar"></span>
+							<span class = "icon-bar"></span>
+						</button>
+					</div>
+					<div class = "navbar-collapse collapse">
+						<ul class = "nav navbar-nav navbar-right">
+							<li><a href="#">Register</a></li>
+							<li><a href="#">Login</a></li>
+						</ul>
 					</div>
 				</div>
-			</header>
-			<!--main page-->
-			<main>
-				<div class = "container body-content">
-					<div class = "row">
-						<div class = "col-md-6">
-							<article>
-								<header>
-									<h2>This is the most interesting article!</h2>
-								</header>
-								
-								<p>This article is about how to ceep the attention of some people
-								   it's verry interesting thing to read. It will teach you how to
-								   speack make a normal conversation where you can grab the other
-								   persons attention!
-								</p>
-								
-								<small clas="author">
-									<p>Yavor Valkov</p>
-								</small>
-								
-								<footer>
-									<div clas = "pull-right">
-										<a class = "btn btn-default btn-xs" href = "#">Read More &raquo;</a>
+			</div>
+		</header>
+		<!--main page-->
+		<main>
+			<div class = "container body-content">
+				<div class = "row">
+					<div class = "col-md-6">
+						<article>
+							<header>
+								<h2>This is the most interesting article!</h2>
+							</header>
+							
+							<p>
+								This article is about how to ceep the attention of some people
+							    it's verry interesting thing to read. It will teach you how to
+							    speack make a normal conversation where you can grab the other
+							    persons attention!
+							</p>
+							<small class="author">Yavor Valkov</small>
+							<footer>
+								<div class = "pull-right">
+									<div class = "btn-group">
+										<a href = "#" class = "btn btn-success btn-xs">Read More &raquo;</a>
+										<a href = "#" class = "btn btn-info btn-xs dropdown-toggle" data-toggle = "dropdown">
+											<span class = "caret"></span>
+										</a>
+										
+										<ul class = "dropdown-menu">
+											<li>
+												<a href = "#" style = "color: red; text-align: center; font-style: bold">Report Article</a>
+											</li>
+										</ul>
 									</div>
-								</footer>
-							</article>
-						</div>
+								</div>
+							</footer>
+						</article>
 					</div>
 				</div>
-			</main>
-			<!--the footer it will always stay there-->
-			<footer>
-				<div class = "container model-footer">
-					<p>&copy; 2016 - Software University Foundation</p>
-				</div>
-			</footer>
-		</body>
-	</html>
+			</div>
+		</main>
+		<!--the footer it will always stay there-->
+		<footer>
+			<div class = "container model-footer">
+				<p>&copy; 2016 - Software University Foundation</p>
+			</div>
+		</footer>
+	</body>
+</html>
