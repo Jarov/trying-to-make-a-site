@@ -11,7 +11,7 @@
 	<body>
 	<!--the header it will always stay there-->
 		<header>
-			<div class = "navbar navbar-default navbar-fixed-top text-uppercase">
+			<div class = "navbar navbar-inverse navbar-fixed-top">
 				<div class = "container">
 					<div class = "navbar-header">
 						<a href = "index.html" class = "navbar-brand">SoftUni Blog</a>
@@ -23,6 +23,24 @@
 						</button>
 					</div>
 					<div class = "navbar-collapse collapse">
+						<ul class = "nav navbar-nav">
+							<li class = "active"><a href = "#">Link</a></li>
+							<li><a href = "#">Other</a></li>
+							<li class = "dopdown">
+								<a href = "#" class = "dopdown-toggle" data-toggle = "dropdown" role = "button">MoreOptions
+								<span class = "caret"></span>
+								</a>
+								<ul class = "dropdown-menu" role = "menu">
+									<li><a href = "#">Action</a></li>
+								</ul>
+							</li>
+						</ul>
+						<form class = "navbar-form navbar-left" role = "search">
+							<div class = "form-group">
+								<input type = "text" class = "form-control" placeholder = "search">
+							</div>
+							<button type = "submit" class = "btn btn-default">Submit</button>
+						</form>
 						<ul class = "nav navbar-nav navbar-right">
 							<li><a href="#">Register</a></li>
 							<li><a href="#">Login</a></li>
@@ -34,11 +52,38 @@
 		<!--main page-->
 		<main>
 			<div class = "container body-content">
+				<div class = "row" style = "padding-top: 50px">
+					<div class = "col-md-8">
+						<header>
+							<h1>Yavor's Blog System</h1>
+						</header>
+						<p>
+							This blog sysistem is about me and i post all sort of things about me and about the things
+							i've tought. There are some interesting thigs about the countries i lived in.
+						</p>
+						<footer style = "padding-top: 20px">
+							<p>&copy; 2017 - Yavor Vasilev Valkov</p>
+							<div class = "pull-right">
+								<a href = "#" class = "btn btn-success">See all articles</a>
+							</div>
+						</footer>
+					</div>
+					<div class = "col-md-4" style = "padding-top: 50px; padding-left: 50px">
+						<div class = "sposor">
+							<div id = "carbon">
+								<a href = "http://www.google.com" class = "carbon-img" target = "_blank">
+									<img src = "images/Google_logo.png" alt border = "0" style = "height: 100px" />
+								</a>
+								<a href = "http://www.google.com" target = "_blank">Sposored by Google - best web search engine</a>
+							</div>
+						</div>
+					</div>
+				</div>
 				<div class = "row">
-					<div class = "col-md-6">
+					<div class = "col-md-4">
 						<article>
 							<header>
-								<h2>This is the most interesting article!</h2>
+								<h2 style = "font-size = 4">This is the most interesting article!</h2>
 							</header>
 							
 							<p>
@@ -52,7 +97,71 @@
 								<div class = "pull-right">
 									<div class = "btn-group">
 										<a href = "#" class = "btn btn-success btn-xs">Read More &raquo;</a>
-										<a href = "#" class = "btn btn-info btn-xs dropdown-toggle" data-toggle = "dropdown">
+										<a href = "#" class = "btn btn-success btn-xs dropdown-toggle" data-toggle = "dropdown">
+											<span class = "caret"></span>
+										</a>
+										
+										<ul class = "dropdown-menu">
+											<li>
+												<a href = "#" style = "color: red; text-align: center; font-style: bold">Report Article</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</footer>
+						</article>
+					</div>
+					
+					<div class = "col-md-4">
+						<article>
+							<header>
+								<h2 style = "font-size = 4">This is the most interesting article!</h2>
+							</header>
+							
+							<p>
+								This article is about how to ceep the attention of some people
+							    it's verry interesting thing to read. It will teach you how to
+							    speack make a normal conversation where you can grab the other
+							    persons attention!
+							</p>
+							<small class="author">Yavor Valkov</small>
+							<footer>
+								<div class = "pull-right">
+									<div class = "btn-group">
+										<a href = "#" class = "btn btn-success btn-xs">Read More &raquo;</a>
+										<a href = "#" class = "btn btn-success btn-xs dropdown-toggle" data-toggle = "dropdown">
+											<span class = "caret"></span>
+										</a>
+										
+										<ul class = "dropdown-menu">
+											<li>
+												<a href = "#" style = "color: red; text-align: center; font-style: bold">Report Article</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</footer>
+						</article>
+					</div>
+					
+					<div class = "col-md-4">
+						<article>
+							<header>
+								<h2 style = "font-size = 4">This is the most interesting article!</h2>
+							</header>
+							
+							<p>
+								This article is about how to ceep the attention of some people
+							    it's verry interesting thing to read. It will teach you how to
+							    speack make a normal conversation where you can grab the other
+							    persons attention!
+							</p>
+							<small class="author">Yavor Valkov</small>
+							<footer>
+								<div class = "pull-right">
+									<div class = "btn-group">
+										<a href = "#" class = "btn btn-success btn-xs">Read More &raquo;</a>
+										<a href = "#" class = "btn btn-success btn-xs dropdown-toggle" data-toggle = "dropdown">
 											<span class = "caret"></span>
 										</a>
 										
@@ -68,11 +177,17 @@
 					</div>
 				</div>
 			</div>
+			<footer>
+				<ul class="pager">
+					<li><a href="#">Previous Page</a></li>
+					<li><a href="#">Next Page</a></li>
+				</ul>
+			</footer>
 		</main>
 		<!--the footer it will always stay there-->
 		<footer>
 			<div class = "container model-footer">
-				<p>&copy; 2016 - Software University Foundation</p>
+				<p class = "pull-right">&copy; 2017 - Software University Foundation</p>
 			</div>
 		</footer>
 	</body>
